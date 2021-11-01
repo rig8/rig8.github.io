@@ -38,7 +38,7 @@ html {
 
 
 .hero {
-  background-image: url(https://github.com/rig8/rig8.github.io/raw/main/image/aeral.jpg);
+  background-image: url("https://github.com/rig8/rig8.github.io/raw/main/image/aeral.jpg");
   background: linear-gradient(rgba(150, 150, 150, 0.55), rgba(150, 150, 150, 0.55)), rgba(0, 0, 0, 0.75) url("https://github.com/rig8/rig8.github.io/raw/main/image/aeral.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -131,12 +131,12 @@ html {
 }
 
 .main-content .section-dark {
-  background-color: #F4E2E2;
+  background-color: #F9E0DB;
   padding: 80px 40px;
 }
 
 .main-content .section-darker {
-  background-color: #C5D0CC;
+  background-color: #E7B5AC;
   padding: 80px 40px;
 }
 
