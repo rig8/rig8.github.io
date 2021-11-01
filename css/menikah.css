@@ -38,8 +38,8 @@ html {
 
 
 .hero {
-  background-image: url("https://github.com/rig8/rig8.github.io/raw/main/image/aeral.jpg");
-  background: linear-gradient(rgba(150, 150, 150, 0.55), rgba(150, 150, 150, 0.55)), rgba(0, 0, 0, 0.75) url("https://github.com/rig8/rig8.github.io/raw/main/image/aeral.jpg") no-repeat;
+  background-image: url(https://raw.githubusercontent.com/rig8/rig8.github.io/main/image/aeral.png);
+  background: linear-gradient(rgba(150, 150, 150, 0.55), rgba(150, 150, 150, 0.55)), rgba(0, 0, 0, 0.75) url("https://raw.githubusercontent.com/rig8/rig8.github.io/main/image/aeral.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
