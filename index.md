@@ -1,2 +1,0 @@
-# Matrimonio Caterina e Tommaso
-
