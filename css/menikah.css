@@ -38,12 +38,10 @@ html {
 
 
 .hero {
-  background-image: url("https://raw.githubusercontent.com/rig8/rig8.github.io/main/image/aeral.png");
-  background: linear-gradient(rgba(231, 181, 172, 0.35), rgba(231, 181, 172, 0.35)), rgba(0, 0, 0, 0.75) url("https://raw.githubusercontent.com/rig8/rig8.github.io/main/image/aeral.png") no-repeat;
-  background-attachment: fixed;
+  background: linear-gradient(rgba(231, 181, 172, 1), rgba(231, 181, 172, 0.85)) no-repeat;
+  background-attachment: scroll;
   background-size: cover;
   color: white;
-  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   font-family: 'Raleway', sans-serif;
 }
 
