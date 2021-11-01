@@ -1,20 +1,22 @@
+url: http://www.alexandkealie.com/
+baseurl: ''
+
 # Site settings
-title: "Sabrina + Vittorio"
-description: |
-    Villa Claudia, Teano
+title: "#kealex2016"
+email: wedding@pretzlav.com
+description: "Alex Pretzlav and Kealie Goodwin are getting married in Piedmont, CA on June 18, 2016"
 
-    28 Maggio 2019
-owner: Vittorio Monaco
-first_published: 2018
-email: vittorio.monaco1@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "www.sabrinaevittoriosposi.it" # the base hostname & protocol for your site
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 3dbbf0
+  secondary: 2f90b9  
+  secondary-dark: 333
 
-# Google analytics
-google_analytics: "UA-40721189-2"
-
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  github: https://github.com/vittoriom/wedding-site
+  - title: twitter
+    url: http://twitter.com/apretz
 
 # Build settings
 markdown: kramdown
+permalink: pretty

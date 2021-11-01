@@ -1,32 +1,80 @@
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <!--[if lte IE 8]><script src="{{ "/js/ie/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
-  <!--[if lte IE 8]><link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
-  <!--[if lte IE 9]><link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-  <!-- favicons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="{{ "/images/favicons/apple-icon-57x57.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="60x60" href="{{ "/images/favicons/apple-icon-60x60.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="72x72" href="{{ "/images/favicons/apple-icon-72x72.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ "/images/favicons/apple-icon-76x76.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="114x114" href="{{ "/images/favicons/apple-icon-114x114.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="120x120" href="{{ "/images/favicons/apple-icon-120x120.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="144x144" href="{{ "/images/favicons/apple-icon-144x144.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ "/images/favicons/apple-icon-152x152.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/images/favicons/apple-icon-180x180.png" | prepend: site.baseurl }}">
-  <link rel="icon" type="image/png" sizes="192x192"  href="{{ "/images/favicons/android-icon-192x192.png" | prepend: site.baseurl }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/favicons/favicon-32x32.png" | prepend: site.baseurl }}">
-  <link rel="icon" type="image/png" sizes="96x96" href="{{ "/images/favicons/favicon-96x96.png" | prepend: site.baseurl }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/favicons/favicon-16x16.png" | prepend: site.baseurl }}">
-  <link rel="manifest" href="{{ "/images/favicons/manifest.json" | prepend: site.baseurl }}">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="{{ "/ms-icon-144x144.png" | prepend: site.baseurl }}">
-  <meta name="theme-color" content="#ffffff">
-  <!-- google analytics -->
-  {% if site.google_analytics and jekyll.environment == 'production' %}{% include analytics.html %}{% endif %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&key=AIzaSyDpBVT23xAdZKjOz1BlflNQJQc0Jb9OURY">
+    </script>
+
+    <script type="text/javascript">
+      function initialize() {
+        var mapCenter = new google.maps.LatLng(37.8284464/*37.8237584*/, -122.2306082);
+        var mapOptions = {
+          center: mapCenter,
+          zoom: 14,
+          scrollwheel: false
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+        var marker = new google.maps.Marker({
+          place: { 
+            location:  { lat: 37.8237584, lng: -122.2306082 },
+            query: "Piedmont Rental Facilities, Piedmont, CA 94611"
+          },
+          map: map
+          });
+        var infowindow = new google.maps.InfoWindow({
+          content: '<p>Piedmont Community Hall</p><p><a href="https://maps.google.com/?daddr=711+Highland+Ave,+Oakland,+CA+94611">Get directions<a/></p>'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+
+        mapCenter = new google.maps.LatLng(37.815800, -122.183519);
+        mapOptions = {
+          center: mapCenter,
+          zoom: 14,
+          scrollwheel: false
+        };
+        map = new google.maps.Map(document.getElementById('map-park'), mapOptions);
+        marker = new google.maps.Marker({
+          place: { 
+            location:  { lat: 37.810755, lng: -122.183519 },
+            query: "Joaquin Miller Park, Oakland, CA"
+          },
+          map: map
+          });
+        infowindow = new google.maps.InfoWindow({
+          content: '<p>Baywood Picnic Area</p><p><a href="https://www.google.com/maps/dir//Sinawik+Trail,+Oakland,+CA+94611/@37.8111235,-122.2541907,34564m/data=!3m2!1e3!4b1!4m8!4m7!1m0!1m5!1m1!1s0x808f87d18fd3a02b:0x9838c7629a7213b2!2m2!1d-122.1841514!2d37.8111442">Get directions<a/></p>'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
