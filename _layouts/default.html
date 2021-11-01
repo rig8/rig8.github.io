@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  {% include head.html %}
+  <body>
+      <main class="container">
+        {{ content }}
+        {% include footer.html %}
+      </main>
+    {% include analytics.html %}
+    <script>
+        (function () {
+            'use strict';
+            var $countdownEl = document.getElementById('countdown');
+            setInterval(function () {
+                var res = countdown(new Date("Aug 13 2017")).toString();
+                $countdownEl.innerText = res;
+            }, 1000)
+        })();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js" type="text/javascript" async></script>
+  </body>
+</html>
