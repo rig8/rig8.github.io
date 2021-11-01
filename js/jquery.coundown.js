@@ -9,14 +9,14 @@
 		var settings = $.extend({
 			date: null,
 			offset: null,
-			day: 'Hari',
-			days: 'Hari',
-			hour: 'Jam',
-			hours: 'Jam',
-			minute: 'Menit',
-			minutes: 'Menit',
-			second: 'Detik',
-			seconds: 'Detik'
+			day: 'Giorno',
+			days: 'Giorni',
+			hour: 'Ora',
+			hours: 'Ore',
+			minute: 'Minuto',
+			minutes: 'Minuti',
+			second: 'Secondo',
+			seconds: 'Secondi'
 		}, options);
 
 		// Throw error if date is not set
