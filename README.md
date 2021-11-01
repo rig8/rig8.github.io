@@ -1,48 +1,30 @@
-# jekyll-theme-easy-wedding
-Are you or a friend getting married? Do you want a quick way to make a **customizable** website? This is the theme for you! When I got married, I created a website to commemorate the occasion as well provide information to my guests. Then, I had a bunch of friends get married, and they wanted me to make them a site too. So, instead of making _basically_ the same site over and over, I decided to templatize it so that I just have to change the data in a yaml file.
+Agency Jekyll theme
+====================
 
-Most of the original work is from https://github.com/cbaclig/wedding and is thanks to [@cbaclig](https://github.com/cbaclig).
+Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
 
-## Installation
+# How to use
 
-Add this line to your Jekyll site's `Gemfile`:
+###Portfolio 
 
-```ruby
-gem "jekyll-theme-easy-wedding"
-```
+Portfolio projects are in '/_posts'
 
-And add this line to your Jekyll site's `_config.yml`:
+Images are in '/img/portfolio'
 
-```yaml
-theme: jekyll-theme-easy-wedding
-```
+###About
 
-And then execute:
+Images are in '/img/about/'
 
-    $ bundle
+###Team
 
-Or install it yourself as:
+Team members and info are in '_config.yml'
 
-    $ gem install jekyll-theme-easy-wedding
+Images are in '/img/team/'
 
-## Usage
 
-The best place to start is by copying the [example folder](https://github.com/cnorick/jekyll-theme-easy-wedding/tree/main/example) to your project, then start editing the .yaml files in [\_data](https://github.com/cnorick/jekyll-theme-easy-wedding/tree/main/example/\_data) to customize the site for your needs.
+# Demo
 
-## Contributing
+View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-easy-wedding.gemspec` accordingly.
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
+=========
+For more details, read [documentation](http://jekyllrb.com/)

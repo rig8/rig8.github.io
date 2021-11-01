@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
-    <body data-target=".navbar-fixed-top">
-        <!-- Javascript Imports -->
-        {% include js.html src='assets/js/ouical.min.js' %}
-        {% include js.html src="assets/main-bundle.js" %}
-        {% include js.html src="assets/js/globals.js" %}
 
-        {% include modals.html %}
+  {% include head.html %}
 
-        {% if page.show_nav != false %}
-            {% include nav.html %}
-        {% endif %}
 
-        <div class="content-wrapper">
-            {{ content }}
-        </div>
+    <body id="page-top" class="index">
 
-        {% if page.show_footer != false %}
-            <div class="footer-wrapper">
-                {% include footer.html %}
-            </div>
-        {% endif %}
+    {% include header.html %}
+    {% include services.html %}
+    {% include portfolio_grid.html %}
+    {% include about.html %}
+    {% include team.html %}
+    {% include clients.html %}
+    {% include contact.html %}
+    {% include footer.html %}
+    {% include modals.html %}
+    {% include js.html %}
+
     </body>
 </html>
