@@ -76,7 +76,7 @@ html {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
 }
 
-@media (max-width: 599px) {
+@media (max-width: 3000px) {
   .hero .hero-foot {
     display: none;
   }
