@@ -54,9 +54,6 @@
             </header>
   
 	<!-- Display the countdown timer in an element -->	                       
-        <section class="page-section" id="Countdown">
-            <div class="container">
-                <div class="text-center">
 
 			<script>
 		<!-- Set the date we're counting down to -->
@@ -68,22 +65,20 @@
 		<!-- Find the distance between now and the count down date -->
   		var distance = countDownDate - now;
 
-  			// Time calculations for days, hours, minutes and seconds
+  			<!--  Time calculations for days, hours, minutes and seconds -->
   			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
  			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 	  		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-		<!-- Display the result in the element with id="demo" -->
-		<a class="btn btn-light btn-xl text-uppercase"  document.getElementById("demo").innerHTML = days + "d " + hours + "h "  + minutes + "m " + seconds + "s ";</a>
-
+                
+		<div class="text-center">
+                   	<h2 class="section-heading text-uppercase"> document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";</h2> 
+		</div>
+			
  		<!-- If the count down is finished, write some text -->
   		if (distance < 0) { clearInterval(x); document.getElementById("demo").innerHTML = "Ci siamo Sposati!"; } }, 1000);
 		</script>
-	                    
-		</div>
-            </div>
-        </section>       
+	                      
 	    
               <!-- Services-->
         <section class="page-section" id="services">
