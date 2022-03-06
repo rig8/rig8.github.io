@@ -12,6 +12,7 @@
         <!--link rel="icon" type="image/x-icon" href="assets/favicon.ico" /-->
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
@@ -31,7 +32,7 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#services">Location</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Il giorno del matrimonio</a></li>
-			<li class="nav-item"><a class="nav-link" href="#Foto">Album</a></li>
+			                  <li class="nav-item"><a class="nav-link" href="#Foto">Album</a></li>
                         <li class="nav-item"><a class="nav-link" href="#Iban">Regalo di nozze</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">RSVP</a></li>
                     </ul>
@@ -39,74 +40,28 @@
             </div>
         </nav>
         
-        
-            
-         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <!-- <div class="masthead-subheading">Matrimonio di</div> -->
                 <div class="masthead-heading text-uppercase">Caterina & Tommaso</div>
-                <!-- div class="masthead-subheading">9 Luglio 2022</div> -->
-                
                 <h1 class="section-subheading  text-uppercase" href="#services">9 | Luglio | 2022</h1>
-                           <!-- <a class="btn btn-primary btn-xl text-uppercase" href="#services"> Ci sposiamo </a> -->
             </div>                
             </header>
-  
-	<!-- Display the countdown timer in an element -->	                       
 
-			<script>
-		<!-- Set the date we're counting down to -->
-		var countDownDate = new Date("Jul 9, 2022 14:30:00").getTime();
-		<!-- Update the count down every 1 second -->
-		var x = setInterval(function() {
-  		<!-- Get today's date and time -->
-  		var now = new Date().getTime();
-		<!-- Find the distance between now and the count down date -->
-  		var distance = countDownDate - now;
-
-  			<!--  Time calculations for days, hours, minutes and seconds -->
-  			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
- 			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	  		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                
-		<div class="text-center">
-                   	<h2 class="section-heading text-uppercase"> document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";</h2> 
-		</div>
-			
- 		<!-- If the count down is finished, write some text -->
-  		if (distance < 0) { clearInterval(x); document.getElementById("demo").innerHTML = "Ci siamo Sposati!"; } }, 1000);
-		</script>
-	                      
-	    
-              <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Cerimonia e festeggiamenti</h2>
-                    
                     <p> Ci sposeremo sabato pomeriggio il <b> 9 Luglio 2022 alle 14.30 </b>, con rito civile. </p>
-                    
-                    <p>La cerimonia avrà luogo nella <b> Sala degli Stucchi di Ca' Farsetti</b>, San Marco 4136, Venezia.</p> 
-                  
-                    <a class="btn btn-light text-uppercase" href="https://goo.gl/maps/NscDiR8435ENT3js9"><b>Ca' Farsetti</b></a>
-
-                    <p>Proseguiremo i festeggiamenti all'<b>hotel Excelsior</b>, Lungomare Guglielmo Marconi 41, Lido di Venezia.</p>
-                    
-                    <a class="btn btn-light text-uppercase" href="https://goo.gl/maps/9JgeT2E6hqYJQK399"><b>Hotel Excelsior</b></a>
-                    
+                    <p> La cerimonia avrà luogo nella <a href="https://goo.gl/maps/NscDiR8435ENT3js9"> <b> Sala degli Stucchi di Ca' Farsetti</b></a>, San Marco 4136, Venezia.</p> 
+                    <p>Proseguiremo i festeggiamenti all'<a href = "https://goo.gl/maps/9JgeT2E6hqYJQK399"><b>hotel Excelsior</b></a>, Lungomare Guglielmo Marconi 41, Lido di Venezia.</p>
                 </div> 
               </div>
         </section>
        
-    
-            <!--Il giorno del Matrimonio-->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Il giorno del Matrimonio</h2>
-                    <h3 class="section-subheading text-muted">"Il matrimonio è un pranzo interminabile con il dolce servito per primo"</h3>
                 </div>
                 <ul class="timeline">
                     <li>
@@ -116,7 +71,7 @@
                                 <h4>14.30</h4>
                                 <h4 class="subheading">Rito civile</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted"> Il rito civile sarà nella sede del comune di Venezia chiamato Ca'Farsetti a Rialto. L'accesso alla "Sala degli Stucchi" avviene dall'ingresso presso il lato del Canal Grande in Riva del Carbon.  </p></div>
+                            <div class="timeline-body"><p class="text-muted"> Il rito civile sarà nella sede del comune di Venezia chiamato Ca'Farsetti a Rialto. L'accesso alla "Sala degli Stucchi" avviene dall'ingresso presso il lato del Canal Grande, in Riva del Carbon.  </p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -124,7 +79,7 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>15.30</h4>
-                                <h4 class="subheading">Barca</h4>
+                                <h4 class="subheading">Spostamento in barca</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Dopo la cerimonia gli sposi andranno via con un Taxi acqueo ed una barca vi attenderà per accompaganrvi alla prossima location. </p></div>
                         </div>
@@ -192,18 +147,6 @@
             </div>
         </section>
        
-     <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contatti</h2>
-                    <h3 class="section-subheading text-muted">per ogni dubbio e per comunicarci eventuali allergie alimentari o esigenze particolari scriveteci</h3>
-                    <p class="text-muted"> Caterinabellotto@gmail.com - +39 348 0584371</p> 
-                    <p class="text-muted"> Tommaso.rigon@gmail.com - +39 320 4288682</p> 
-                </div>
-            </div>
-        </section>
-	    
 	    
         <!-- Footer-->
         <footer class="footer py-4">
